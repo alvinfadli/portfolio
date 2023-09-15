@@ -1,0 +1,57 @@
+/* CSS */
+#typing-text {
+    overflow: hidden;
+    /* Hide the text initially */
+    border-right: 0.15em solid orange;
+    /* Add a blinking cursor effect */
+    white-space: nowrap;
+    /* Keep the text in one line */
+    margin: 0;
+    padding: 0;
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+.icon-container {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-container a {
+    text-decoration: none;
+}
+
+.icon-container svg {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+    /* Add a transition for the transform property */
+}
+
+.icon-container svg:hover {
+    transform: scale(1.2);
+    /* Scale up the SVG on hover (adjust the scale factor as needed) */
+}
