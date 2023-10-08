@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState, useEffect } from "react";
 import TypingAnimation from "../../components/TypingAnimation";
+import mainBg from "../../assets/main-bg.jpg";
 
 function Landing() {
   const [activeNavItem, setActiveNavItem] = useState("about-me");
@@ -8,7 +9,7 @@ function Landing() {
   const handleNavItemClick = (id) => {
     setActiveNavItem(id);
   };
-
+  // Preload the main background image before the component is mounted
   useEffect(() => {
     const navItems = [
       "about-me",
@@ -103,15 +104,18 @@ function Landing() {
           <div className="hidden md:flex w-11/12 mx-auto border-solid border-b-2 border-slate-50"></div>
         </div>
       </header>
-      <div className="w-full">
+      <div className="w-full bg-img">
         <div className="snap-y snap-mandatory h-screen w-full mx:auto scroll-smooth overflow-y-scroll">
           <div
             id="about-me"
-            className="relative snap-center bg-slate-950 shrink-0 h-screen flex my-auto items-center justify-center font-title"
+            className="relative snap-center bg-slate-950 shrink-0 h-screen flex my-auto items-center justify-center font-title main-page"
+            style={{ backgroundImage: `url(${mainBg})` }}
           >
-            <div className="">
-              <div className=" text-white">
-                <h1 className="text-center text-3xl md:text-6xl pb-6 font-normal">
+            <img src={`${mainBg}`} style={{ display: "none" }} />
+            <div className="overlay-container">
+              <div className="dark-overlay -z-5"></div>
+              <div className=" text-white absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <h1 className="w-max first-letter:text-center text-3xl md:text-6xl pb-6 font-normal">
                   Alvin Fadli Dwi Mulya
                 </h1>
                 <div className="w-max mx-auto">
@@ -151,7 +155,7 @@ function Landing() {
                         id="Layer_1"
                         xmlns="http://www.w3.org/2000/svg"
                         // eslint-disable-next-line react/no-unknown-property
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
                         viewBox="0 0 310 310"
                         xmlSpace="preserve"
                       >
@@ -228,11 +232,11 @@ function Landing() {
                   </p>
                   <ul className="list-disc pl-5">
                     <li>
-                      Created Restful API for TeknologiID's PR Consultant
-                      feature using Laravel and Node.js.
+                      Created RESTful API for Teknologi.id using Laravel,
+                      Node.JS and PostgreSQL
                     </li>
                     <li>
-                      Constructed the user interface (UI) using Vue.js and the
+                      Constructed user interfaces (UI) using Vue.js and the
                       Quasar Framework.
                     </li>
                   </ul>
@@ -251,7 +255,7 @@ function Landing() {
           </div>
           <div
             id="education"
-            className="snap-center shrink-0 bg-zinc-900 sm:h-screen px-5 pt-5 md:pt-20 flex justify-center md:px-10"
+            className="snap-center shrink-0 bg-zinc-900 h-screen px-5 pt-5 md:pt-20 flex justify-center md:px-10"
           >
             <div className="md:pt-5 md:w-7/12">
               <h1 className="text-center text-3xl pb-5 text-white font-bold visible md:hidden">
