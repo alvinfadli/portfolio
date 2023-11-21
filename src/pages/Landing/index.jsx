@@ -236,9 +236,10 @@ function Landing() {
                       Node.JS and PostgreSQL
                     </li>
                     <li>
-                      Constructed user interfaces (UI) using Vue.js and the
-                      Quasar Framework.
+                      Developed user interfaces (UI) using Vue.js and the Quasar
+                      Framework.
                     </li>
+                    <li>Fixing bugs on several Teknologi.id features.</li>
                   </ul>
                   <div className="flex flex-wrap gap-1 mt-2">
                     <p className="bg-zinc-600 px-2 rounded-lg">Docker</p>
