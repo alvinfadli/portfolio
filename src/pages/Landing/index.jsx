@@ -223,30 +223,59 @@ function Landing() {
                   />
                 </div>
                 <div className="w-11/12 md:w-full">
-                  <h3 className="text-xl font-semibold">
+                  <h3 className="text-xl font-bold">
                     Software Engineer ‧ Internship
                   </h3>
-                  <p className="text-gray-300">Sagara Technology</p>
+                  <p className="text-gray-200 font-semibold">
+                    Sagara Technology
+                  </p>
                   <p className="text-gray-100">
-                    Bandung, Indonesia | Aug 2022 - Present
+                    Bandung, Indonesia | Aug 2023 - Nov 2023
                   </p>
                   <ul className="list-disc pl-5">
                     <li>
-                      Created RESTful API for Teknologi.id using Laravel,
-                      Node.JS and PostgreSQL
+                      Created RESTful API for{" "}
+                      <span>
+                        <a
+                          className="text-blue-600"
+                          href="https://teknologi.id/"
+                        >
+                          Teknologi.id
+                        </a>
+                      </span>{" "}
+                      using Laravel, Node.JS and PostgreSQL
                     </li>
                     <li>
-                      Developed user interfaces (UI) using Vue.js and the Quasar
-                      Framework.
+                      Developed user interfaces (UI) for{" "}
+                      <span>
+                        <a
+                          className="text-blue-600"
+                          href="https://teknologi.id/"
+                        >
+                          Teknologi.id
+                        </a>
+                      </span>{" "}
+                      using Vue.js and the Quasar Framework.
                     </li>
-                    <li>Fixing bugs on several Teknologi.id features.</li>
+                    <li>
+                      Updated minor features for{" "}
+                      <span>
+                        <a
+                          className="text-blue-600"
+                          href="https://teknologi.id/"
+                        >
+                          Teknologi.id
+                        </a>
+                      </span>{" "}
+                      backend using Node.JS.
+                    </li>
                   </ul>
                   <div className="flex flex-wrap gap-1 mt-2">
                     <p className="bg-zinc-600 px-2 rounded-lg">Docker</p>
-                    <p className="bg-zinc-600 px-2 rounded-lg px-2">Git</p>
-                    <p className="bg-zinc-600 px-2 rounded-lg px-2">Laravel</p>
-                    <p className="bg-zinc-600 px-2 rounded-lg px-2">React</p>
-                    <p className="bg-zinc-600 px-2 rounded-lg px-2">Vue</p>
+                    <p className="bg-zinc-600 px-2 rounded-lg">Git</p>
+                    <p className="bg-zinc-600 px-2 rounded-lg">Laravel</p>
+                    <p className="bg-zinc-600 px-2 rounded-lg">React</p>
+                    <p className="bg-zinc-600 px-2 rounded-lg">Vue</p>
                     <p className="bg-zinc-600 px-2 rounded-lg">Node JS</p>
                     <p className="bg-zinc-600 px-2 rounded-lg">Quasar</p>
                   </div>
