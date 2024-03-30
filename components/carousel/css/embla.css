@@ -1,0 +1,33 @@
+.embla {
+  margin: auto;
+  --slide-height: 5em;
+  --slide-size: 20%;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+.embla__slide {
+  /* flex: 0 0 var(--slide-size); */
+  min-width: 0;
+  flex: 0 0 33%; /* Default slide covers 100% of the viewport */
+}
+.embla__slide__number {
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  border-radius: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--slide-height);
+}
+
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 20%; /* Breakpoint SM slide covers 50% of the viewport */
+  }
+}
