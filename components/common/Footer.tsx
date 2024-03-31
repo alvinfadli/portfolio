@@ -8,7 +8,7 @@ const dm_serif = DM_Serif_Display({
 });
 
 const Footer = () => (
-  <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 ">
+  <div className="mx-auto w-full xl:w-8/12 p-4 py-6 lg:py-8 ">
     <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div className="flex sm:items-center justify-between px-5 ">
       <p className="text-sm text-gray-500 sm:text-center dark:text-gray-400 ">

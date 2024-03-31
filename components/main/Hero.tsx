@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
   };
   return (
     <div className="relative h-screen flex flex-col items-center justify-center pt-20 px-5">
-      <div className="z-10">
+      <div className="z-10" data-aos="fade-up">
         <h1
           className={`${dm_serif.className} text-3xl xl:text-6xl text-center`}
         >

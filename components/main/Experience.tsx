@@ -13,7 +13,10 @@ const Experience = () => (
       <h1 className={`${dm_serif.className} text-3xl text-center mb-5`}>
         Experiences
       </h1>
-      <div className="flex w-full xl:w-8/12 mx-auto border-t py-5">
+      <div
+        className="flex w-full xl:w-8/12 mx-auto border-t py-5"
+        data-aos="fade-up"
+      >
         <div className="w-9 h-9 mr-4 mt-2">
           <img
             src="equnix-logo.png"
