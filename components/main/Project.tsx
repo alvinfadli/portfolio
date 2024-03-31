@@ -1,6 +1,5 @@
 import React from "react";
 import { DM_Serif_Display } from "next/font/google";
-import Image from "next/image";
 
 const dm_serif = DM_Serif_Display({
   subsets: ["latin"],
@@ -9,13 +8,11 @@ const dm_serif = DM_Serif_Display({
 });
 
 const Project = () => (
-  <div className="h-screen flex justify-center pt-28">
-    <div id="" className="w-full">
+  <div id="project" className=" flex justify-center my-28 ">
+    <div className="w-full z-10">
       <h1 className={`${dm_serif.className} text-3xl text-center`}>Projects</h1>
-      <p className="text-center py-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sit!
-      </p>
-      <div className="xl:mx-auto flex flex-wrap gap-0 w-full xl:w-9/12">
+
+      {/* <div className="xl:mx-auto flex flex-wrap gap-0 w-full xl:w-9/12">
         <div className="h-full p-2 lg:w-1/3 ">
           <div>
             <div className="relative flex flex-col border-slate-300 border text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
@@ -77,6 +74,12 @@ const Project = () => (
               </p>
             </div>
           </div>
+        </div>
+      </div> */}
+      <div className="flex justify-center">
+        <div>
+          <img width={450} src={"on-progress-img.png"} />
+          <p className="text-center -mt-5">Still cooking . . .</p>
         </div>
       </div>
     </div>

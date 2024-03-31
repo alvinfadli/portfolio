@@ -2,6 +2,7 @@ import React from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
+import AutoScroll from "embla-carousel-auto-scroll";
 import techData from "./techData";
 
 type PropType = {
@@ -10,7 +11,10 @@ type PropType = {
 };
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    AutoScroll({ playOnInit: true, speed: 1, stopOnInteraction: false }),
+  ]);
+  // const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
   return (
     <section className="embla">
