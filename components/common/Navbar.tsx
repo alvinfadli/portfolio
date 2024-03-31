@@ -9,7 +9,7 @@ const dm_serif = DM_Serif_Display({
 
 const Navbar = () => (
   <div className="fixed w-full shadow-sm p-2 xl:p-4 z-50 border-solid border-b  backdrop-blur-md bg-white/50">
-    <div className="w-full flex justify-between  items-center xl:w-10/12 mx-auto ">
+    <div className="w-full flex justify-between  items-center xl:w-8/12 mx-auto px-3">
       <h1 className={`${dm_serif.className} text-xl xl:text-2xl text-center`}>
         A
       </h1>
