@@ -1,11 +1,13 @@
 import React from "react";
 
+/* Button UI Component */
+
 interface ButtonProps {
   text: string;
   onClick?: () => void;
   disabled?: boolean;
   variant?: "primary" | "secondary";
-  icon?: React.ReactNode; // Optional icon
+  icon?: React.ReactNode;
 }
 
 const Button: React.FC<ButtonProps> = ({
