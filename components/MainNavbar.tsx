@@ -8,6 +8,8 @@ const dm_serif = DM_Serif_Display({
   weight: "400",
 });
 
+/* Main navbar feature component */
+
 export default function HomepageNavbar() {
   return (
     <Navbar>
