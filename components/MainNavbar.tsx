@@ -10,7 +10,7 @@ const dm_serif = DM_Serif_Display({
 
 /* Main navbar feature component */
 
-export default function HomepageNavbar() {
+export default function MainNavbar() {
   return (
     <Navbar>
       <h1 className={`${dm_serif.className} text-xl xl:text-2xl text-center`}>
