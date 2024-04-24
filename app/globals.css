@@ -24,24 +24,3 @@
     transparent 360deg
   );
 }
-
-.hero {
-  background: radial-gradient(circle, #e7e5e4 10%, transparent 9%);
-  background-size: 1em 1em;
-  background-color: #ffffff;
-  position: relative; /* Ensure the positioning of pseudo-element */
-  overflow: hidden;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; /* Adjust the height of the gradient overlay */
-  background: radial-gradient(
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 1)
-  ); /* Modify the opacity values here */
-}
