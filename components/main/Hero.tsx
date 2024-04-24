@@ -1,7 +1,7 @@
 import React from "react";
 import { DM_Serif_Display } from "next/font/google";
 import Tech from "./Tech";
-import Button from "@/components/common/Button";
+import Button from "@/components/ui/Button";
 import { ChevronDown, File } from "lucide-react";
 
 const dm_serif = DM_Serif_Display({
