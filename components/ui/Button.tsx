@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      className={`${classNames} flex border hover:bg-slate-900 py-3 text-sm justify-center items-center px-6 rounded font-medium bg-slate-800 text-white shadow-md`}
+      className={`${classNames} flex hover:bg-slate-900 py-1.5 text-sm justify-center items-center px-6 rounded font-medium bg-slate-800 text-white shadow-md`}
       onClick={onClick}
       disabled={disabled}
     >
