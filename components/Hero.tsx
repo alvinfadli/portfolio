@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { user } from "@/data/Data";
+import Button from "./ui/button";
 
 const Hero = () => {
   const router = useRouter();
