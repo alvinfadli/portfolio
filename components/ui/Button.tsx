@@ -4,7 +4,7 @@ import React from "react";
 
 interface ButtonProps {
   text: string;
-  onClick?: () => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   disabled?: boolean;
   variant?: "primary" | "secondary";
   icon?: React.ReactNode;
