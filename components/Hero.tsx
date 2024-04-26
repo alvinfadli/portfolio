@@ -1,19 +1,14 @@
 import React from "react";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/button";
 import User from "@/types/User";
 import { useRouter } from "next/navigation";
+import { user } from "@/data/Data";
 
-/* Hero UI Component */
-
-interface HeroProps {
-  user: User;
-}
-
-const Hero = ({ user }: HeroProps) => {
+const Hero = () => {
   const router = useRouter();
 
   return (
-    <div className="relative h-screen flex flex-col items-center justify-center px-5">
+    <div className="relative py-20 md:py-0 md:h-screen flex flex-col items-center justify-center px-5">
       <div className={`flex w-full`}>
         <div className="w-full md:w-7/12 flex flex-col justify-center ">
           <h1 className="text-2xl md:text-3xl xl:text-5xl font-serif font-bold mb-2">
