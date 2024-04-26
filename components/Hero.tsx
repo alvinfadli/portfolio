@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "@/components/ui/button";
-import User from "@/types/User";
 import { useRouter } from "next/navigation";
 import { user } from "@/data/Data";
 
