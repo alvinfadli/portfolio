@@ -10,8 +10,8 @@ const Hero = () => {
     <div className="relative py-20 md:py-0 h-screen flex flex-col items-center justify-center px-5">
       <div className={`flex w-full`}>
         <div className="w-full  flex flex-col ">
-          <h1 className="flex justify-end text-2xl md:text-3xl xl:text-5xl font-medium">
-            <div className="sm:w-11/12">
+          <h1 className="flex justify-end text-2xl md:text-3xl xl:text-5xl 2xl:text-6xl font-medium">
+            <div className="sm:w-11/12 2xl:w-10/12">
               <p className="text-center sm:text-left">
                 Turn ideas into innovative products.
               </p>
