@@ -10,13 +10,11 @@ import Image from "next/image";
 
 // TODO: add project, contact, skills to the page
 export default function About() {
-  console.log(languageSkill);
-
   return (
     <>
       <div className="min-h-screen py-20">
-        <div className="flex  px-3 pt-10 gap-5">
-          <div className="w-7/12 pt-2">
+        <div className="flex flex-col-reverse md:flex-row px-3 pt-10 gap-5">
+          <div className="w-full md:w-7/12 pt-2 ">
             <div>
               <p>
                 Hello there! My name is{" "}
@@ -57,16 +55,23 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className=" flex justify-end w-5/12">
-            <Image
-              className="h-auto max-w-xl"
-              src="/profile-bw.jpeg"
-              alt="image description"
-              width={10}
-              height={10}
-              sizes="100vw"
-              style={{ width: "100%", height: "auto", borderRadius: "8px" }}
-            />
+          <div className="flex justify-end w-full md:h-full md:w-5/12">
+            <div className="w-full h-80 md:h-full">
+              <Image
+                className="object-cover"
+                src="/profile-bw.jpeg"
+                alt="image description"
+                width={320}
+                height={320}
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  borderRadius: "8px",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>
