@@ -56,7 +56,7 @@ export default function About() {
             </div>
           </div>
           <div className="flex justify-end w-full md:h-full md:w-5/12">
-            <div className="w-full h-80 md:h-full">
+            <div className="w-full h-80 md:h-96">
               <Image
                 className="object-cover"
                 src="/profile-bw.jpeg"
