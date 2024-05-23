@@ -23,7 +23,9 @@ export default function RootLayout({
         <Providers>
           <main className="relative w-full mx-auto text-base">
             <Navbar />
-            <div className="w-full sm:w-11/12 mx-auto">{children}</div>
+            <div className="w-full sm:w-11/12 2xl:w-9/12  mx-auto">
+              {children}
+            </div>
             <Footer />
           </main>
         </Providers>
