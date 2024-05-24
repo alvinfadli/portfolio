@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 py-6 bg-transparent ${
+      className={`fixed w-full z-50 py-6 bg-transparent border-b sm:border-none ${
         scrolled
           ? "bg-white/70 dark:bg-black/70 backdrop-blur "
           : "bg-transparent"
