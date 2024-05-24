@@ -42,7 +42,6 @@ const Navbar = () => {
         <div className="flex items-center gap-3 xl:gap-4 ">
           <Link href={"/about"}>About Me</Link>
           <Link href={"/project"}>Project</Link>
-          <p>Achivement</p>
           <ThemeSwitch />
         </div>
       </div>
