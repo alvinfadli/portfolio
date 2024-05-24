@@ -31,10 +31,6 @@ export default function About() {
                 both frontend and backend development.
               </p>
               <br />
-              <p>
-                I have expertise in Next, React, PHP, and Javascript as a
-                Fullstack Developer.
-              </p>
             </div>
             <div className="flex w-full mt-5 gap-10 flex-wrap">
               <div className="">
