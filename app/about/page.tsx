@@ -25,7 +25,7 @@ export default function About() {
               <br />
               <p>
                 I&apos;m a final year student in Politeknik Negeri Padang
-                majoring Software Engineering Technology. I have one year of
+                majoring in Software Engineering Technology. I have one year of
                 professional working experience as a{" "}
                 <span className="font-bold">Software Engineer</span>, working on
                 both frontend and backend development.
