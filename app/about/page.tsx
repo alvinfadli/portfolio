@@ -60,6 +60,7 @@ export default function About() {
                 width={320}
                 height={320}
                 sizes="100vw"
+                placeholder="blur"
                 style={{
                   width: "100%",
                   height: "100%",
