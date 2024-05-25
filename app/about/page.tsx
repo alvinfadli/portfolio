@@ -7,6 +7,7 @@ import {
   toolSkill,
 } from "@/data/Data";
 import Image from "next/image";
+import ProfileImg from "./../../public/profile-bw.jpeg";
 
 // TODO: add project, contact, skills to the page
 export default function About() {
@@ -55,12 +56,13 @@ export default function About() {
             <div className="w-full h-80 md:h-96">
               <Image
                 className="object-cover"
-                src="/profile-bw.jpeg"
-                alt="image description"
+                src={ProfileImg}
+                alt="profile img"
                 width={320}
                 height={320}
                 sizes="100vw"
                 placeholder="blur"
+                priority
                 style={{
                   width: "100%",
                   height: "100%",
