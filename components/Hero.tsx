@@ -15,7 +15,7 @@ const Hero = () => {
             <div className="sm:w-11/12 2xl:w-10/12">
               <p className="text-center sm:text-left ">a software engineer.</p>
               <p className="text-center sm:text-right">
-                expertise in digital craftsmanship:
+                skilled in digital craftsmanship:
               </p>
               <p className="text-center sm:text-right">
                 development, design, research, and beyond.
