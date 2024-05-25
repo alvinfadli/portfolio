@@ -33,9 +33,9 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="w-full sm:w-11/12 2xl:w-9/12  flex justify-between  items-center mx-auto px-3">
+      <div className="w-full sm:w-11/12 2xl:w-9/12  flex justify-between  items-center mx-auto px-3 ">
         <TransitionLink
-          className={`${dm_serif.className} text-3xl text-center`}
+          className={`${dm_serif.className} text-3xl text-center pb-1`}
           href="/"
           label="Alvin"
         />
