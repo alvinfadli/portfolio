@@ -8,7 +8,7 @@ const Hero = () => {
   const router = useRouter();
 
   return (
-    <div className="relative pt-20 md:py-0 h-screen flex flex-col items-center justify-center px-5">
+    <div className="relative sm:pt-20 md:py-0 h-screen flex flex-col items-center justify-center px-5">
       <div className={`flex w-full`}>
         <div className="w-full  flex flex-col ">
           <h1 className="flex justify-center text-3xl md:text-4xl xl:text-5xl font-medium">
