@@ -1,5 +1,6 @@
 import User from "@/types/User";
 import Skill from "@/types/Skill";
+import Project from "@/types/Project";
 
 export const user: User = {
   name: "Alvin Fadli Dwi Mulya",
@@ -39,4 +40,13 @@ export const toolSkill: Skill[] = [
   { icon: "simple-icons:postman", text: "Postman" },
   { icon: "solar:figma-bold", text: "Figma" },
   { icon: "fluent-emoji-high-contrast:hugging-face", text: "Huggingface" },
+];
+
+export const project: Project[] = [
+  {
+    title: "Sibi sign",
+    desc: "Sibi signs is a web-based application that utilizes Computer Vision and Convolutional Neural Network technology to classify Indonesian SIBI-styled sign language.",
+    imgSrc: "sibi-sign.png",
+    projectLink: "https://github.com/alvinfadli/sibi-sign",
+  },
 ];
