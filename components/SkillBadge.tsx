@@ -13,8 +13,8 @@ const SkillBadge = ({ skills }: SkillBadgeProps) => {
 
   return (
     <div>
-      {skills.map((skill) => (
-        <Badge key={skill.text} icon={skill.icon} text={skill.text} />
+      {skills.map((skill, index) => (
+        <Badge key={index} icon={skill.icon} text={skill.text} />
       ))}
     </div>
   );
