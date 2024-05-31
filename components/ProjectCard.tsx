@@ -36,12 +36,10 @@ const ProjectCard = ({ projects }: ProjectCardProps) => {
             </div>
           </div>
           <div className="p-8">
-            <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 ">
               {project.title}
             </h5>
-            <p className=" font-normal text-gray-700 dark:text-gray-400">
-              {project.desc}
-            </p>
+            <p className=" font-normal text-gray-700 ">{project.desc}</p>
             <div className="flex flex-wrap gap-2">
               <div className="bg-slate-100 inline-flex gap-1 px-3 py-2 mt-5 rounded-[5px]">
                 <div className="flex items-center">

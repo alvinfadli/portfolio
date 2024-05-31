@@ -27,7 +27,7 @@ export default function ThemeSwitch() {
   if (resolvedTheme === "dark") {
     return (
       <button
-        className="text-gray-500 bg-slate-700 p-2 rounded-[8px] shadow-md hover:text-gray-900 dark:hover:text-white ms-5"
+        className="text-gray-500 bg-slate-700 p-2 rounded-[8px] shadow-md hover:text-gray-900  ms-5"
         onClick={() => setTheme("light")}
       >
         <FiSun className="text-yellow-500" />
@@ -38,7 +38,7 @@ export default function ThemeSwitch() {
   if (resolvedTheme === "light") {
     return (
       <button
-        className="text-gray-500 bg-slate-200 p-2 rounded-[8px] shadow-md hover:text-gray-900 dark:hover:text-white ms-5"
+        className="text-gray-500 bg-slate-200 p-2 rounded-[8px] shadow-md hover:text-gray-900  ms-5"
         onClick={() => setTheme("dark")}
       >
         <FiMoon className="text-slate-700" />

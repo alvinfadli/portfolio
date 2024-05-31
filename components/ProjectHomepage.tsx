@@ -5,7 +5,7 @@ import ProjectIll from "./../public/project-homepage.webp";
 export default function Project() {
   return (
     <>
-      <div className=" dark:bg-neutral-900 w-full">
+      <div className="  w-full">
         <div className="py-8 w-full sm:w-11/12 md:w-10/12 lg:w-8/12 mx-auto px-5 md:px-0 sm:border-l border-dashed">
           <div className="flex flex-col-reverse md:flex-row pt-5 gap-5 items-center md:pl-5 mx-auto">
             <div className="w-full md:w-6/12 pt-2 pl-1.5 md:pl-0">
