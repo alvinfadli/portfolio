@@ -1,4 +1,3 @@
-"use client";
 import SkillBadge from "@/components/SkillBadge";
 import {
   databaseSkill,
