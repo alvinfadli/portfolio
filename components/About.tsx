@@ -12,7 +12,7 @@ import ProfileImg from "./../public/profile-bw.jpeg";
 export default function About() {
   return (
     <>
-      <div className="bg-slate-50 dark:bg-neutral-900 w-full">
+      <div className="bg-slate-50  w-full">
         <div className="py-20 w-full md:w-8/12 mx-auto px-5 md:px-0 border-l border-dashed">
           <h1 className="font-semibold text-sky-600 text-lg pl-5">About Me</h1>
           <div className="flex flex-col-reverse md:flex-row pt-5 gap-5 pl-5">

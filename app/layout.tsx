@@ -24,7 +24,7 @@ export default function RootLayout({
         <Providers>
           <main className="relative w-full mx-auto text-base">
             <Navbar />
-            <div className="dark:bg-neutral-900">{children}</div>
+            <div>{children}</div>
             <Footer />
           </main>
         </Providers>

@@ -9,12 +9,12 @@ const Hero = () => {
     <div
       className={`relative sm:py-0 h-screen flex flex-col px-5 w-full sm:w-11/12 md:w-10/12 lg:w-8/12  mx-auto  `}
     >
-      <div className="absolute bottom-0 pb-5 left-0 border-l px-5 sm:border-dashed dark:border-slate-800">
+      <div className="absolute bottom-0 pb-10 left-0 border-l px-5 sm:border-dashed ">
         <div className="w-7/12">
-          <h1 className="text-4xl sm:text-6xl dark:text-white 2xl:text-[5.5rem] text-left">
+          <h1 className="text-4xl sm:text-6xl  2xl:text-[5.5rem] text-left">
             SOFTWARE ENGINEER
           </h1>
-          <h1 className="text-4xl sm:text-6xl dark:text-white 2xl:text-[5.5rem] text-left text-neutral-600">
+          <h1 className="text-4xl sm:text-6xl  2xl:text-[5.5rem] text-left text-neutral-600">
             FOCUSED ON DIGITAL CRAFTSMANSHIP
           </h1>
         </div>
