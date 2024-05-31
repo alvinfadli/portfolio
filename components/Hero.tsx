@@ -14,7 +14,7 @@ const Hero = () => {
           <h1 className="text-4xl sm:text-6xl dark:text-white 2xl:text-[5.5rem] text-left">
             SOFTWARE ENGINEER
           </h1>
-          <h1 className="text-4xl sm:text-6xl dark:text-white 2xl:text-[5.5rem] text-left">
+          <h1 className="text-4xl sm:text-6xl dark:text-white 2xl:text-[5.5rem] text-left text-neutral-600">
             FOCUSED ON DIGITAL CRAFTSMANSHIP
           </h1>
         </div>

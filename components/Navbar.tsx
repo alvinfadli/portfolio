@@ -37,7 +37,14 @@ const Navbar = () => {
         >
           Alvin
         </a>
-        <div className="flex items-center gap-3 xl:gap-4 "></div>
+        <div className="flex items-center gap-3 xl:gap-4 ">
+          <a className="" href="/about">
+            About Me
+          </a>
+          <a className="" href="/project">
+            Project
+          </a>
+        </div>
       </div>
     </nav>
   );

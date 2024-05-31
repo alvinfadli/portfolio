@@ -6,7 +6,7 @@ export default function Project() {
   return (
     <>
       <div className=" dark:bg-neutral-900 w-full">
-        <div className="py-14 md:py-20 w-full sm:w-11/12 md:w-10/12 lg:w-8/12 mx-auto px-5 md:px-0 sm:border-l border-dashed">
+        <div className="py-8 w-full sm:w-11/12 md:w-10/12 lg:w-8/12 mx-auto px-5 md:px-0 sm:border-l border-dashed">
           <div className="flex flex-col-reverse md:flex-row pt-5 gap-5 items-center md:pl-5 mx-auto">
             <div className="w-full md:w-6/12 pt-2 pl-1.5 md:pl-0">
               <h1 className="font-semibold text-2xl pb-5">Project</h1>
@@ -19,9 +19,12 @@ export default function Project() {
                 </p>
               </div>
               <div className="flex w-full mt-5 gap-10 flex-wrap">
-                <button className="bg-black rounded-full text-white text-sm px-5 py-1.5 font-bold">
+                <a
+                  className="bg-black rounded-xl text-white text-sm px-5 py-1.5 font-bold hover:bg-neutral-700"
+                  href="/project"
+                >
                   Learn more
-                </button>
+                </a>
               </div>
             </div>
             <div className="flex justify-center w-full md:h-full md:w-5/12">

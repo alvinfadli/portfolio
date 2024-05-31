@@ -6,7 +6,7 @@ export default function AchievementHomepage() {
   return (
     <>
       <div className=" dark:bg-neutral-900 w-full">
-        <div className="py-14 md:py-20 w-full sm:w-11/12 md:w-10/12 lg:w-8/12 mx-auto px-5 md:px-0 sm:border-l border-dashed">
+        <div className="py-8 w-full sm:w-11/12 md:w-10/12 lg:w-8/12 mx-auto px-5 md:px-0 sm:border-l border-dashed">
           <div className="flex flex-col md:flex-row pt-5 gap-5 items-center justify-start md:pl-5">
             <div className="flex justify-start w-full md:h-full md:w-5/12">
               <div className="w-full h-80 md:h-96 flex items-center">
@@ -36,7 +36,7 @@ export default function AchievementHomepage() {
                   </p>
                 </div>
                 <div className="flex w-full mt-5 gap-10 flex-wrap">
-                  <button className="bg-black rounded-full text-white text-sm px-5 py-1.5 font-bold">
+                  <button className="bg-black rounded-xl text-white text-sm px-5 py-1.5 font-bold">
                     Learn more
                   </button>
                 </div>
