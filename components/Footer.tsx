@@ -2,7 +2,7 @@ import React from "react";
 import { Github, Linkedin } from "lucide-react";
 
 const Footer = () => (
-  <div className="mx-auto w-full sm:w-11/12 2xl:w-9/12 ">
+  <div className="mx-auto w-full sm:w-11/12 md:w-10/12 lg:w-8/12 mt-10">
     <hr className=" border-gray-200 sm:mx-auto dark:border-gray-700 " />
     <div className={`flex sm:items-center justify-between p-5`}>
       <p className="text-sm text-gray-500 sm:text-center dark:text-gray-400 ">

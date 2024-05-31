@@ -13,63 +13,59 @@ import ProfileImg from "./../../public/profile-bw.jpeg";
 export default function About() {
   return (
     <>
-      <div className="min-h-screen py-20">
-        <div className="flex flex-col-reverse md:flex-row px-3 pt-10 gap-5">
-          <div className="w-full md:w-7/12 pt-2 ">
-            <div>
-              <p>
-                Hello there! My name is{" "}
-                <span className="font-bold">Alvin Fadli Dwi Mulya</span>, Alvin
-                for short. Born and raised in{" "}
-                <span className="font-bold">Padang, Indonesia</span>.
-              </p>
-              <br />
-              <p>
-                I&apos;m a final year student in Politeknik Negeri Padang
-                majoring in Software Engineering Technology. I have one year of
-                professional working experience as a{" "}
-                <span className="font-bold">Software Engineer</span>, working on
-                both frontend and backend development.
-              </p>
-              <br />
-            </div>
-            <div className="flex w-full mt-5 gap-10 flex-wrap">
-              <div className="">
-                <h2 className="font-semibold pb-2">Languages</h2>
-                <SkillBadge skills={languageSkill} />
-              </div>
-              <div className="">
-                <h2 className="font-semibold pb-2">Frameworks</h2>
-                <SkillBadge skills={frameworkSkill} />
-              </div>
-              <div className="">
-                <h2 className="font-semibold pb-2">Databases</h2>
-                <SkillBadge skills={databaseSkill} />
-              </div>
-              <div className="">
-                <h2 className="font-semibold pb-2">Tools</h2>
-                <SkillBadge skills={toolSkill} />
-              </div>
-            </div>
+      <div className="min-h-screen py-20 w-full md:w-8/12 mx-auto px-3">
+        <div className="mt-10 w-full md:w-1/3 mx-auto h-80 md:h-96">
+          <Image
+            className="object-cover"
+            src={ProfileImg}
+            alt="profile img"
+            width={320}
+            height={320}
+            sizes="100vw"
+            placeholder="blur"
+            priority
+            style={{
+              width: "100%",
+              height: "100%",
+              borderRadius: "8px",
+              objectFit: "cover",
+            }}
+          />
+        </div>
+        <div className="w-full md:w-1/2 mx-auto mt-10">
+          <div>
+            <p>
+              Hello there! My name is{" "}
+              <span className="font-bold">Alvin Fadli Dwi Mulya</span>, Alvin
+              for short. Born and raised in{" "}
+              <span className="font-bold">Padang, Indonesia</span>.
+            </p>
+            <br />
+            <p>
+              I&apos;m a final year student in Politeknik Negeri Padang majoring
+              in Software Engineering Technology. I have one year of
+              professional working experience as a{" "}
+              <span className="font-bold">Software Engineer</span>, working on
+              both frontend and backend development.
+            </p>
+            <br />
           </div>
-          <div className="flex justify-end w-full md:h-full md:w-5/12">
-            <div className="w-full h-80 md:h-96">
-              <Image
-                className="object-cover"
-                src={ProfileImg}
-                alt="profile img"
-                width={320}
-                height={320}
-                sizes="100vw"
-                placeholder="blur"
-                priority
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  borderRadius: "8px",
-                  objectFit: "cover",
-                }}
-              />
+          <div className="flex w-full mt-5 gap-10 flex-wrap">
+            <div className="">
+              <h2 className="font-semibold pb-2">Languages</h2>
+              <SkillBadge skills={languageSkill} />
+            </div>
+            <div className="">
+              <h2 className="font-semibold pb-2">Frameworks</h2>
+              <SkillBadge skills={frameworkSkill} />
+            </div>
+            <div className="">
+              <h2 className="font-semibold pb-2">Databases</h2>
+              <SkillBadge skills={databaseSkill} />
+            </div>
+            <div className="">
+              <h2 className="font-semibold pb-2">Tools</h2>
+              <SkillBadge skills={toolSkill} />
             </div>
           </div>
         </div>

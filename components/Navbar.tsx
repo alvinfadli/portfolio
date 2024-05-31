@@ -1,9 +1,6 @@
 "use client";
 import { DM_Serif_Display } from "next/font/google";
-import ThemeSwitch from "./ThemeSwitch";
-import Link from "next/link";
 import { useState, useEffect } from "react";
-import TransitionLink from "./TransitionLink";
 
 const dm_serif = DM_Serif_Display({
   subsets: ["latin"],
@@ -33,16 +30,20 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="w-full sm:w-11/12 2xl:w-9/12  flex justify-between  items-center mx-auto px-3 ">
-        <TransitionLink
+      <div className="w-full sm:w-11/12 md:w-10/12 lg:w-8/12 flex justify-between items-center mx-auto px-3 ">
+        <a
           className={`${dm_serif.className} text-3xl text-center pb-1`}
           href="/"
-          label="Alvin"
-        />
+        >
+          Alvin
+        </a>
         <div className="flex items-center gap-3 xl:gap-4 ">
-          <TransitionLink href="/about" label="About Me" />
-          <TransitionLink href="/project" label="Project" />
-          <ThemeSwitch />
+          <a className="" href="/about">
+            About Me
+          </a>
+          <a className="" href="/project">
+            Project
+          </a>
         </div>
       </div>
     </nav>
