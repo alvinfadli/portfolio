@@ -45,7 +45,7 @@ export const toolSkill: Skill[] = [
 export const project: Project[] = [
   {
     title: "Sibi sign",
-    desc: "Sibi signs is a web-based application that utilizes Computer Vision and Convolutional Neural Network technology to classify Indonesian SIBI-styled sign language.",
+    desc: "Sibi signs is a web-based application that utilizes Computer Vision technology to classify Indonesian SIBI-styled sign language.",
     imgSrc: "sibi-sign.png",
     projectLink: "https://github.com/alvinfadli/sibi-sign",
   },
