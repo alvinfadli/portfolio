@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <div
-      className={`relative sm:py-0 h-screen flex flex-col px-5 w-full sm:w-11/12 md:w-10/12 lg:w-8/12  mx-auto  `}
+      className={`relative sm:py-0 h-[90vh] sm:h-screen flex flex-col px-5 w-full sm:w-11/12 lg:w-10/12 2xl:w-8/12  mx-auto  `}
     >
       <div className="absolute bottom-0 pb-10 left-0 border-l px-5 sm:border-dashed ">
         <div className="w-7/12">

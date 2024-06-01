@@ -1,7 +1,7 @@
 import Project from "@/types/Project";
 import Card from "./ui/Card";
 import { useRouter } from "next/navigation";
-import { BotIcon } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 interface ProjectCardProps {
   projects: Project[];
@@ -17,31 +17,24 @@ const ProjectCard = ({ projects }: ProjectCardProps) => {
   return (
     <>
       {projects.map((project, index) => (
-        <Card
-          className="text-left w-full md:w-[31.5%] group"
+        <div
+          className="group relative xl:h-[450px] w-full rounded-[5px] border flex-col items-start text-lef sm:w-[48%] md:w-[31.5%]"
           key={index}
-          onClick={() => {
-            window.open(project.projectLink, "_blank");
-          }}
         >
           <div className="m-1">
             <div className="relative">
-              <div className="flex pt-10 pl-10 bg-slate-100 rounded-[6px] ">
+              <div className="duration-400 relative top-0 h-40 sm:h-44 md:h-40  lg:h-48 transform overflow-hidden rounded border animate-gradient-move bg-slate-100 from-gray-100 via-fuchsia-200 to-stone-100 bg-[length:200%_200%] transition-all ease-in-out xl:group-hover:h-44  bg-gradient-to-l">
                 <img
-                  className="rounded-tl-[10px]"
                   src={`/${project.imgSrc}`}
                   alt=""
+                  className="duration-400 absolute ml-10 mt-10 w-full transform rounded-tl-[5px] object-fit transition-all ease-in-out xl:group-hover:-translate-y-2"
                 />
               </div>
             </div>
           </div>
-          <div className="p-8">
-            <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 ">
-              {project.title}
-            </h5>
-            <p className=" font-normal text-gray-700 ">{project.desc}</p>
+          <div className="p-5">
             <div className="flex flex-wrap gap-2">
-              <div className="bg-slate-100 inline-flex gap-1 px-3 py-2 mt-5 rounded-[5px]">
+              <div className="mb-3 inline-flex gap-1 rounded-sm bg-slate-100 px-3 py-2">
                 <div className="flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -55,11 +48,32 @@ const ProjectCard = ({ projects }: ProjectCardProps) => {
                     />
                   </svg>
                 </div>
-                <p className="text-sm flex items-center">Flask</p>
+                <p className="flex items-center text-sm">Flask</p>
+              </div>
+            </div>
+            <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900">
+              {project.title}
+            </h5>
+            <p className="font-normal text-gray-700">{project.desc}</p>
+            <div className="xl:duration-400 xl:absolute bottom-4 pt-2 pl-0.5 w-full xl:translate-y-3 xl:transform pb-0 xl:opacity-0 xl:transition-all xl:group-hover:translate-y-0 xl:group-hover:opacity-100">
+              <div className="flex transition-all">
+                <a
+                  className="group/link -mt-0.5 flex items-center cursor-pointer gap-1"
+                  href={project.projectLink}
+                  target="_blank"
+                >
+                  <p className="font-semibold text-indigo-400 group-hover/link:text-black">
+                    Visit
+                  </p>
+                  <ChevronRight
+                    size={18}
+                    className="text-indigo-400 group-hover/link:text-black"
+                  />
+                </a>
               </div>
             </div>
           </div>
-        </Card>
+        </div>
       ))}
     </>
   );

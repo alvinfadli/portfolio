@@ -10,10 +10,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ children, onClick, className = "" }) => {
   return (
-    <button
-      className={`${className}  bg-white border border-gray-200 rounded-[8px] shadow `}
-      onClick={onClick}
-    >
+    <button className={`${className} `} onClick={onClick}>
       {children}
     </button>
   );
