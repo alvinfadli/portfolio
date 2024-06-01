@@ -12,10 +12,7 @@ export default function Project() {
               <h1 className="font-semibold text-2xl pb-5">Project</h1>
               <div>
                 <p>
-                  Explore a variety of projects that demonstrate my proficiency
-                  in design, development, and innovation. Each project
-                  exemplifies my commitment to excellence and my ability to
-                  deliver high-quality results.
+                  Explore a range of projects that highlight my skills in design, development, and innovation.
                 </p>
               </div>
               <div className="flex w-full mt-5 gap-10 flex-wrap">
