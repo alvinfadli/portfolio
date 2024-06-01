@@ -13,8 +13,8 @@ import ProfileImg from "./../../public/profile-bw.jpeg";
 export default function About() {
   return (
     <>
-      <div className="min-h-screen py-20 w-full md:w-8/12 mx-auto px-3">
-        <div className="mt-10 w-full md:w-1/3 mx-auto h-80 md:h-96">
+      <div className="min-h-screen py-20 w-full sm:w-11/12 md:w-8/12 lg:w-7/12 xl:w-6/12 2xl:w-4/12 mx-auto px-3">
+        <div className="mt-10 w-full sm:w-9/12  mx-auto h-80 sm:h-96">
           <Image
             className="object-cover"
             src={ProfileImg}
@@ -32,7 +32,7 @@ export default function About() {
             }}
           />
         </div>
-        <div className="w-full md:w-1/2 mx-auto mt-10">
+        <div className="w-full mx-auto mt-10">
           <div>
             <p>
               Hello there! My name is{" "}
@@ -50,7 +50,7 @@ export default function About() {
             </p>
             <br />
           </div>
-          <div className="flex w-full mt-5 gap-10 flex-wrap">
+          <div className="flex w-full mt-5 gap-8 flex-wrap">
             <div className="">
               <h2 className="font-semibold pb-2">Languages</h2>
               <SkillBadge skills={languageSkill} />
