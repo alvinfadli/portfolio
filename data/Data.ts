@@ -47,6 +47,7 @@ export const project: Project[] = [
     title: "Sibi sign",
     desc: "Sibi signs is a web-based application that utilizes Computer Vision technology to classify Indonesian SIBI-styled sign language.",
     imgSrc: "sibi-sign.png",
+    tech: ["Flask", "Python", "OpenCV"],
     projectLink: "https://github.com/alvinfadli/sibi-sign",
   },
 ];
