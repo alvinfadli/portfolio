@@ -1,15 +1,14 @@
 import Image from "next/image";
 import AchievementIll from "./../public/achievement-homepage.webp";
 
-// TODO: add project, contact, skills to the page
 export default function AchievementHomepage() {
   return (
     <>
-      <div className=" w-full">
-        <div className="py-8 w-full sm:w-11/12 xl:w-10/12 2xl:w-8/12 mx-auto px-5 md:px-0 sm:border-l border-dashed">
-          <div className="flex flex-col md:flex-row pt-5 gap-5 items-center justify-start md:pl-5">
-            <div className="flex justify-start w-full md:h-full md:w-5/12">
-              <div className="w-full h-80 md:h-96 flex items-center">
+      <div className="w-full">
+        <div className="mx-auto w-full border-dashed px-5 py-8 sm:w-11/12 sm:border-l md:px-0 xl:w-10/12 2xl:w-8/12">
+          <div className="flex flex-col items-center justify-start gap-5 pt-5 md:flex-row md:pl-5">
+            <div className="flex w-full justify-start md:h-full md:w-5/12">
+              <div className="mx-auto flex w-full items-center sm:w-6/12 md:w-8/12 lg:w-10/12 xl:w-full">
                 <Image
                   src={AchievementIll}
                   alt="project illustration"
@@ -26,18 +25,20 @@ export default function AchievementHomepage() {
                 />
               </div>
             </div>
-            <div className="w-full md:w-6/12 pt-2 pl-1.5 md:pl-0 mx-auto ">
+            <div className="mx-auto w-full pl-1.5 pt-2 md:w-6/12 md:pl-0">
               <div className="w-full">
-                <h1 className="font-semibold text-2xl pb-5">Achievement</h1>
+                <h1 className="pb-5 text-2xl font-semibold">Achivements</h1>
                 <div>
                   <p>
                     Browse through milestones and accomplishments that reflect
-                    my dedication, expertise, and contributions.
+                    my dedication, expertise, and contributions. Throughout my
+                    journey, I have always wanted to give my best, both inside
+                    and outside of software engineering fields.
                   </p>
                 </div>
-                <div className="flex w-full mt-5 gap-10 flex-wrap">
-                  <button className="bg-black rounded-xl text-white text-sm px-5 py-1.5 font-bold">
-                    Learn more
+                <div className="mt-5 flex w-full flex-wrap gap-10">
+                  <button className="rounded-xl bg-black px-5 py-1.5 text-sm font-bold text-white">
+                    Explore
                   </button>
                 </div>
               </div>

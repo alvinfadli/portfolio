@@ -5,15 +5,25 @@ import { project } from "@/data/Data";
 export default function Project() {
   return (
     <>
-      <div className="min-h-screen py-24 px-3 md:px-0 w-full sm:w-11/12 lg:w-10/12 2xl:w-8/12 mx-auto flex flex-col">
-        <div className="text-center mb-10">
-          <h1 className="text-3xl font-semibold pb-5">Projects</h1>
+      <div className="mx-auto flex min-h-screen w-full flex-col px-3 py-24 sm:w-11/12 md:px-0 lg:w-10/12 2xl:w-8/12">
+        <div className="mb-10 text-center">
+          <h1 className="pb-5 text-3xl font-semibold">Projects</h1>
           <p>
             Here are some of the projects that I have worked on throughout my
             career.
           </p>
+          <p>
+            Explore my other projects on{" "}
+            <a
+              className="font-medium text-indigo-400"
+              href="https://github.com/alvinfadli"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </p>
         </div>
-        <div className="flex flex-wrap items-start gap-8 justify-center w-full">
+        <div className="flex flex-wrap justify-center gap-5">
           <ProjectCard projects={project} />
         </div>
       </div>

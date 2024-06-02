@@ -1,31 +1,33 @@
 import Image from "next/image";
 import ProjectIll from "./../public/project-homepage.webp";
 
-// TODO: add project, contact, skills to the page
 export default function Project() {
   return (
     <>
-      <div className="  w-full">
-        <div className="py-8 w-full sm:w-11/12 lg:w-10/12 2xl:w-8/12 mx-auto px-5 md:px-0 sm:border-l border-dashed">
-          <div className="flex flex-col-reverse md:flex-row pt-5 gap-5 items-center md:pl-5 mx-auto">
-            <div className="w-full md:w-6/12 pt-2 pl-1.5 md:pl-0">
-              <h1 className="font-semibold text-2xl pb-5">Project</h1>
+      <div className="w-full">
+        <div className="mx-auto w-full border-dashed px-5 py-8 sm:w-11/12 sm:border-l md:px-0 lg:w-10/12 2xl:w-8/12">
+          <div className="mx-auto flex flex-col-reverse items-center gap-5 pt-5 md:flex-row md:pl-5">
+            <div className="w-full pl-1.5 pt-2 md:w-6/12 md:pl-0">
+              <h1 className="pb-5 text-2xl font-semibold">Project</h1>
               <div>
                 <p>
-                  Explore a range of projects that highlight my skills in design, development, and innovation.
+                  Explore a range of projects that highlight the progress of my
+                  skills in design, development, and innovation. I always strive
+                  to learn new tools and technologies that are relevant in the
+                  industry.
                 </p>
               </div>
-              <div className="flex w-full mt-5 gap-10 flex-wrap">
+              <div className="mt-5 flex w-full flex-wrap gap-10">
                 <a
-                  className="bg-black rounded-xl text-white text-sm px-5 py-1.5 font-bold hover:bg-neutral-700"
+                  className="rounded-xl bg-black px-5 py-1.5 text-sm font-bold text-white hover:bg-neutral-700"
                   href="/project"
                 >
-                  Learn more
+                  Explore
                 </a>
               </div>
             </div>
-            <div className="flex justify-center w-full md:h-full md:w-5/12">
-              <div className="w-full h-80 md:h-96 flex items-center">
+            <div className="flex w-full justify-center md:h-full md:w-5/12">
+              <div className="flex w-full items-center sm:w-6/12 md:w-8/12 lg:w-10/12 xl:w-full">
                 <Image
                   src={ProjectIll}
                   alt="project illustration"
