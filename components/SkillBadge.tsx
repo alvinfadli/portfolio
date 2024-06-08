@@ -1,3 +1,4 @@
+"use client";
 import Skill from "@/types/Skill";
 import React from "react";
 import Badge from "./ui/Badge";

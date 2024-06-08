@@ -1,3 +1,4 @@
+"use client";
 import Project from "@/types/Project";
 import { useRouter } from "next/navigation";
 
