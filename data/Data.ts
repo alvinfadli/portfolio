@@ -26,12 +26,14 @@ export const frameworkSkill: Skill[] = [
   { icon: "ri:nextjs-fill", text: "Next" },
   { icon: "mdi:laravel", text: "Laravel" },
   { icon: "akar-icons:link-chain", text: "Langchain" },
+  { icon: "simple-icons:flask", text: "Flask" },
 ];
 
 export const databaseSkill: Skill[] = [
   { icon: "fontisto:mysql", text: "MySQL" },
   { icon: "akar-icons:postgresql-fill", text: "PostgreSQL" },
   { icon: "simple-icons:mongodb", text: "MongoDB" },
+  { icon: "ri:supabase-fill", text: "Supabase" },
 ];
 
 export const toolSkill: Skill[] = [
@@ -40,6 +42,7 @@ export const toolSkill: Skill[] = [
   { icon: "simple-icons:postman", text: "Postman" },
   { icon: "solar:figma-bold", text: "Figma" },
   { icon: "fluent-emoji-high-contrast:hugging-face", text: "Huggingface" },
+  { icon: "mdi:docker", text: "Docker" },
 ];
 
 export const project: Project[] = [

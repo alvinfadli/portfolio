@@ -1,25 +1,20 @@
 import React from "react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 const Hero = () => {
-  const router = useRouter();
-
   return (
     <div
-      className={`relative sm:py-0 h-[90vh] sm:h-screen flex flex-col px-5 w-full sm:w-11/12 lg:w-10/12 2xl:w-8/12  mx-auto  `}
+      className={`relative mx-auto flex h-[95vh] w-full flex-col px-5 sm:h-screen sm:w-11/12 sm:py-0 lg:w-10/12 2xl:w-8/12`}
     >
-      <div className="absolute bottom-0 pb-10 left-0 border-l px-5 sm:border-dashed ">
-        <div className="w-7/12">
-          <h1 className="text-4xl sm:text-6xl  2xl:text-[5.5rem] text-left">
-            SOFTWARE ENGINEER
-          </h1>
-          <h1 className="text-4xl sm:text-6xl  2xl:text-[5.5rem] text-left text-neutral-600">
+      <div className="absolute bottom-0 left-0 border-l px-5 pb-10 sm:border-dashed">
+        <div className="w-7/12 text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[5.5rem]">
+          <h1 className="text-left">SOFTWARE ENGINEER</h1>
+          <h1 className="text-left text-neutral-600">
             FOCUSED ON DIGITAL CRAFTSMANSHIP
           </h1>
         </div>
-        <div className="my-5 sm:my-10 pl-2">
-          <div className="w-auto inline-block">
+        <div className="my-5 pl-2 sm:my-10">
+          <div className="inline-block w-auto">
             <div className="flex gap-5 sm:gap-10">
               <div className="flex items-center">
                 <Link
@@ -27,12 +22,12 @@ const Hero = () => {
                     "https://docs.google.com/document/d/1eIJ8GaeF1q7-3LQrcEF6PhJdVpvcobrIBpof8kREe18/edit?usp=sharing"
                   }
                   target="_blank"
-                  className="text-sm flex justify-center items-center gap-0.5 py-2 sm:py-4 px-5 sm:px-10 bg-neutral-900  text-white border shadow-lg"
+                  className="flex items-center justify-center gap-0.5 border bg-neutral-900 px-5 py-2 text-sm text-white shadow-lg sm:px-10 sm:py-4"
                 >
                   Resume
                 </Link>
               </div>
-              <div className="w-full sm:w-1/2 flex items-center">
+              <div className="flex w-full items-center sm:w-1/2">
                 <p className="">
                   Discover how my skills and experience can bring value to your
                   team.

@@ -1,4 +1,3 @@
-"use client";
 import SkillBadge from "@/components/SkillBadge";
 import {
   databaseSkill,
@@ -9,12 +8,11 @@ import {
 import Image from "next/image";
 import ProfileImg from "./../../public/profile-bw.jpeg";
 
-// TODO: add project, contact, skills to the page
 export default function About() {
   return (
     <>
-      <div className="min-h-screen py-20 w-full sm:w-11/12 md:w-8/12 lg:w-7/12 xl:w-6/12 2xl:w-4/12 mx-auto px-3">
-        <div className="mt-10 w-full sm:w-9/12  mx-auto h-80 sm:h-96">
+      <div className="mx-auto min-h-screen w-full px-3 py-20 sm:w-11/12 md:w-8/12 lg:w-7/12 xl:w-6/12 2xl:w-4/12">
+        <div className="mx-auto mt-10 h-80 w-full sm:h-96 sm:w-9/12">
           <Image
             className="object-cover"
             src={ProfileImg}
@@ -32,7 +30,7 @@ export default function About() {
             }}
           />
         </div>
-        <div className="w-full mx-auto mt-10">
+        <div className="mx-auto mt-10 w-full">
           <div>
             <p>
               Hello there! My name is{" "}
@@ -50,21 +48,21 @@ export default function About() {
             </p>
             <br />
           </div>
-          <div className="flex w-full mt-5 gap-8 flex-wrap">
+          <div className="mt-5 flex w-full flex-wrap gap-8">
             <div className="">
-              <h2 className="font-semibold pb-2">Languages</h2>
+              <h2 className="pb-2 font-semibold">Languages</h2>
               <SkillBadge skills={languageSkill} />
             </div>
             <div className="">
-              <h2 className="font-semibold pb-2">Frameworks</h2>
+              <h2 className="pb-2 font-semibold">Frameworks</h2>
               <SkillBadge skills={frameworkSkill} />
             </div>
             <div className="">
-              <h2 className="font-semibold pb-2">Databases</h2>
+              <h2 className="pb-2 font-semibold">Databases</h2>
               <SkillBadge skills={databaseSkill} />
             </div>
             <div className="">
-              <h2 className="font-semibold pb-2">Tools</h2>
+              <h2 className="pb-2 font-semibold">Tools</h2>
               <SkillBadge skills={toolSkill} />
             </div>
           </div>
