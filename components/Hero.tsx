@@ -7,7 +7,7 @@ const Hero = () => {
       className={`relative mx-auto flex h-[95vh] w-full flex-col px-5 sm:h-screen sm:w-11/12 sm:py-0 lg:w-10/12 2xl:w-8/12`}
     >
       <div className="absolute bottom-0 left-0 border-l px-5 pb-10 sm:border-dashed">
-        <div className="w-7/12 text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[5.5rem]">
+        <div className="w-7/12 text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl">
           <h1 className="text-left">SOFTWARE ENGINEER</h1>
           <h1 className="text-left text-neutral-600">
             FOCUSED ON DIGITAL CRAFTSMANSHIP
@@ -18,9 +18,7 @@ const Hero = () => {
             <div className="flex gap-5 sm:gap-10">
               <div className="flex items-center">
                 <Link
-                  href={
-                    "https://docs.google.com/document/d/1eIJ8GaeF1q7-3LQrcEF6PhJdVpvcobrIBpof8kREe18/edit?usp=sharing"
-                  }
+                  href={"https://www.linkedin.com/in/alvinfadli/"}
                   target="_blank"
                   className="flex items-center justify-center gap-0.5 border bg-neutral-900 px-5 py-2 text-sm text-white shadow-lg sm:px-10 sm:py-4"
                 >
