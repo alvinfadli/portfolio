@@ -22,7 +22,7 @@ export default function Project() {
             </a>
           </p>
         </div>
-        <div className="flex flex-wrap justify-center gap-5">
+        <div className="flex flex-wrap justify-center gap-5" data-aos="fade-up">
           <ProjectCard projects={project} />
         </div>
       </div>

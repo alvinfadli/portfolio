@@ -6,7 +6,10 @@ const Hero = () => {
     <div
       className={`relative mx-auto flex h-[95vh] w-full flex-col px-5 sm:h-screen sm:w-11/12 sm:py-0 lg:w-10/12 2xl:w-8/12`}
     >
-      <div className="absolute bottom-0 left-0 border-l px-5 pb-10 sm:border-dashed">
+      <div
+        className="absolute bottom-0 left-0 border-l px-5 pb-10 sm:border-dashed"
+        data-aos="fade-up"
+      >
         <div className="w-7/12 text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl">
           <h1 className="text-left">SOFTWARE ENGINEER</h1>
           <h1 className="text-left text-neutral-600">
@@ -25,6 +28,7 @@ const Hero = () => {
                   Resume
                 </Link>
               </div>
+
               <div className="flex w-full items-center sm:w-1/2">
                 <p className="">
                   Discover how my skills and experience can bring value to your
@@ -35,6 +39,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
       <div className="absolute"></div>
     </div>
   );

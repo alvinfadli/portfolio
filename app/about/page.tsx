@@ -11,7 +11,10 @@ import ProfileImg from "./../../public/profile-bw.jpeg";
 export default function About() {
   return (
     <>
-      <div className="mx-auto min-h-screen w-full px-3 py-20 sm:w-11/12 md:w-8/12 lg:w-7/12 xl:w-6/12 2xl:w-4/12">
+      <div
+        className="mx-auto min-h-screen w-full px-3 py-20 sm:w-11/12 md:w-8/12 lg:w-7/12 xl:w-6/12 2xl:w-4/12"
+        data-aos="fade-up"
+      >
         <div className="mx-auto mt-10 h-80 w-full sm:h-96 sm:w-9/12">
           <Image
             className="object-cover"
