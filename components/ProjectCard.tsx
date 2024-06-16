@@ -66,7 +66,7 @@ const ProjectCard = ({ projects }: ProjectCardProps) => {
             <a
               href={project.projectLink}
               target="_blank"
-              className="inline-flex items-center rounded-lg px-1 text-center font-medium text-indigo-500 hover:text-black"
+              className="group inline-flex items-center rounded-lg px-1 text-center font-medium text-amber-500 hover:text-black"
             >
               Visit
               <svg

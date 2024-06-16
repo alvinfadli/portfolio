@@ -1,12 +1,23 @@
 import ProjectCard from "@/components/ProjectCard";
 import { project } from "@/data/Data";
+import { DM_Serif_Display } from "next/font/google";
+
+const dm_serif = DM_Serif_Display({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+});
 
 export default function Project() {
   return (
     <>
       <div className="mx-auto flex min-h-screen w-full flex-col px-3 py-24 sm:w-11/12 md:px-0 lg:w-10/12 2xl:w-8/12">
         <div className="mb-10 text-center">
-          <h1 className="pb-5 text-3xl font-semibold">Projects</h1>
+          <h1
+            className={`${dm_serif.className} pb-5 text-3xl font-semibold md:text-5xl`}
+          >
+            Projects
+          </h1>
           <p>
             Here are some of the projects that I have worked on throughout my
             career.
