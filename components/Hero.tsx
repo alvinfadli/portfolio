@@ -21,7 +21,7 @@ const Hero = () => {
           className={`${dm_serif.className} w-7/12 text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl`}
         >
           <h1 className="text-left">SOFTWARE ENGINEER</h1>
-          <h1 className="text-left text-amber-200">
+          <h1 className="text-left text-amber-300">
             FOCUSED ON DIGITAL CRAFTSMANSHIP
           </h1>
         </div>
