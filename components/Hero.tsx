@@ -1,5 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { DM_Serif_Display } from "next/font/google";
+
+const dm_serif = DM_Serif_Display({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+});
 
 const Hero = () => {
   return (
@@ -10,9 +17,11 @@ const Hero = () => {
         className="absolute bottom-0 left-0 border-l px-5 pb-10 sm:border-dashed"
         data-aos="fade-up"
       >
-        <div className="w-7/12 text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl">
+        <div
+          className={`${dm_serif.className} w-7/12 text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl`}
+        >
           <h1 className="text-left">SOFTWARE ENGINEER</h1>
-          <h1 className="text-left text-neutral-600">
+          <h1 className="text-left text-amber-200">
             FOCUSED ON DIGITAL CRAFTSMANSHIP
           </h1>
         </div>
