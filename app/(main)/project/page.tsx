@@ -11,19 +11,12 @@ const dm_serif = DM_Serif_Display({
 export default function Project() {
   return (
     <>
-      <div className="mx-auto flex min-h-screen w-full flex-col px-3 py-24 sm:w-11/12 md:px-0 lg:w-10/12 2xl:w-8/12">
-        <div className="mb-10 text-center">
-          <h1
-            className={`${dm_serif.className} pb-5 text-3xl font-semibold md:text-5xl`}
-          >
-            Projects
-          </h1>
-          <p>
+      <div className="mx-auto w-full">
+        <div className="flex flex-col py-10">
+          <h1 className="text-2xl font-bold">Projects</h1>
+          <p className="text-justify">
             Here are some of the projects that I have worked on throughout my
-            career.
-          </p>
-          <p>
-            Explore my other projects on{" "}
+            career. Explore my other projects on{" "}
             <a
               className="font-medium text-indigo-400"
               href="https://github.com/alvinfadli"
@@ -33,7 +26,7 @@ export default function Project() {
             </a>
           </p>
         </div>
-        <div className="flex flex-wrap justify-center gap-5" data-aos="fade-up">
+        <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
           <ProjectCard projects={project} />
         </div>
       </div>
