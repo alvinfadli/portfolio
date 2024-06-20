@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <main className="relative mx-auto w-full md:w-10/12 lg:w-8/12 2xl:w-6/12">
           <Navbar />
-          <div className="min-h-[80vh] px-5">{children}</div>
+          <div className="px-5">{children}</div>
           <Footer />
         </main>
         <Analytics />
