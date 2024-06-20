@@ -9,33 +9,16 @@ const dm_serif = DM_Serif_Display({
 });
 
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <nav
-      className={`fixed w-full z-10 py-6 bg-transparent ${
-        scrolled ? "bg-white/70  backdrop-blur " : "bg-transparent"
-      }`}
-    >
-      <div className="w-full sm:w-11/12 lg:w-10/12 2xl:w-8/12 flex justify-between items-center mx-auto px-3 ">
+    <nav className="px-5 py-5 md:pt-10">
+      <div className="mx-auto flex w-full items-center justify-between">
         <a
-          className={`${dm_serif.className} text-3xl text-center pb-1`}
+          className="rounded-[5px] bg-slate-800 px-2 pt-1 text-center font-serif text-2xl font-bold text-white"
           href="/"
         >
-          Alvin
+          A
         </a>
-        <div className="flex items-center gap-3 xl:gap-4 ">
+        <div className="flex items-center gap-3 text-base xl:gap-4">
           <a className="" href="/about">
             About Me
           </a>
