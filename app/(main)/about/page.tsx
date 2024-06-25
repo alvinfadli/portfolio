@@ -1,3 +1,4 @@
+"use client";
 import SkillBadge from "@/components/SkillBadge";
 import {
   databaseSkill,
@@ -6,7 +7,7 @@ import {
   toolSkill,
 } from "@/data/Data";
 import Image from "next/image";
-import ProfileImg from "@/public/profile-square.jpeg";
+import ProfileImg from "@/public/profile-square.webp";
 
 export default function About() {
   return (

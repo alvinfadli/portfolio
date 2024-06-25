@@ -49,7 +49,7 @@ export const project: Project[] = [
   {
     title: "Sibi sign",
     desc: "Computer Vision to classify Indonesian SIBI-styled sign language.",
-    imgSrc: "sibi-sign-illustration.png",
+    imgSrc: "sibi-sign-illustration.webp",
     tech: ["Flask", "Python", "OpenCV"],
     projectLink: "https://github.com/alvinfadli/sibi-sign",
   },

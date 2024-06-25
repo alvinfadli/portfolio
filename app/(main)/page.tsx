@@ -1,3 +1,4 @@
+"use client";
 import ProjectCard from "@/components/ProjectCard";
 import { project } from "@/data/Data";
 import { Link } from "next-view-transitions";
