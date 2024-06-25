@@ -48,9 +48,16 @@ export const toolSkill: Skill[] = [
 export const project: Project[] = [
   {
     title: "Sibi sign",
-    desc: "Computer Vision to classify Indonesian SIBI-styled sign language.",
+    desc: "Computer Vision to classify Indonesian SIBI-styled sign language",
     imgSrc: "sibi-sign-illustration.webp",
     tech: ["Flask", "Python", "OpenCV"],
     projectLink: "https://github.com/alvinfadli/sibi-sign",
+  },
+  {
+    title: "Library Information System",
+    desc: "Laravel-based website for cataloging and managing library resources",
+    imgSrc: "library-illustration.webp",
+    tech: ["PHP", "Laravel", "Bootstrap"],
+    projectLink: "https://github.com/alvinfadli/si-perpustakaan",
   },
 ];
