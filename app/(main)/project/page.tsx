@@ -14,7 +14,7 @@ export default function Project() {
     <>
       <div className="mx-auto w-full">
         <div className="flex flex-col py-10">
-          <h1 className="text-2xl font-bold">Projects</h1>
+          <h1 className="project text-2xl font-bold">Projects</h1>
           <p className="text-justify">
             Here are some of the projects that I have worked on throughout my
             career. Explore my other projects on{" "}

@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 .my-name {
-  view-transition-name: demo-title;
+  view-transition-name: name;
+  width: fit-content;
+}
+
+.project {
+  view-transition-name: project;
   width: fit-content;
 }
 

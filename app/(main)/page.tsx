@@ -24,11 +24,17 @@ export default function Home() {
       </div>
       <div className="flex flex-col py-10">
         <p className="mb-8 text-lg font-semibold underline underline-offset-4">
-          Recent projects
+          Recent <span className="project">Projects</span>
         </p>
         <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
           <ProjectCard projects={project} />
         </div>
+        <Link
+          href={"/project"}
+          className="py-5 text-center text-sm text-blue-500 underline underline-offset-4"
+        >
+          See all projects
+        </Link>
       </div>
     </>
   );

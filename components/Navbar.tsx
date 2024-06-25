@@ -13,16 +13,16 @@ const Navbar = () => {
     <nav className="px-5 py-5 md:pt-10">
       <div className="mx-auto flex w-full items-center justify-between">
         <Link
-          className="rounded-[5px] bg-slate-800 px-2 pt-1 text-center font-serif text-2xl font-bold text-white"
+          className="text-medium rounded-[5px] bg-slate-800 px-2 pt-1 text-center font-serif text-2xl font-bold text-white"
           href="/"
         >
           A
         </Link>
-        <div className="flex items-center gap-3 text-base xl:gap-4">
-          <Link className="" href="/about">
+        <div className="flex items-center gap-3 text-base font-medium text-slate-500 xl:gap-4">
+          <Link className="hover:text-slate-950" href="/about">
             About Me
           </Link>
-          <Link className="" href="/project">
+          <Link className="hover:text-slate-950" href="/project">
             Project
           </Link>
         </div>

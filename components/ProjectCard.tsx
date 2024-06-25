@@ -28,7 +28,7 @@ const ProjectCard = ({ projects }: ProjectCardProps) => {
     <>
       {projects.map((project, index) => (
         <div
-          className="flex min-h-36 rounded-[10px] border p-5 text-sm"
+          className="flex min-h-36 rounded-[10px] border p-5 text-sm hover:shadow-md"
           key={index}
         >
           <div className="flex">
@@ -47,28 +47,30 @@ const ProjectCard = ({ projects }: ProjectCardProps) => {
                   ))}
                 </div>
               </div>
-              <a
-                href={project.projectLink}
-                target="_blank"
-                className="group inline-flex items-center rounded-lg px-1 text-center font-medium text-blue-500 hover:text-black"
-              >
-                Visit
-                <svg
-                  className="ms-2 h-3.5 w-3.5 rtl:rotate-180"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
+              <div className="inline">
+                <a
+                  href={project.projectLink}
+                  target="_blank"
+                  className="group inline-flex items-center rounded-lg px-1 text-center font-medium text-blue-500 hover:text-black"
                 >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
+                  Visit
+                  <svg
+                    className="ms-2 h-3.5 w-3.5 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
             <div className="flex w-4/12 items-center">
               <img src={project.imgSrc} alt="Responsive Image" className="" />
