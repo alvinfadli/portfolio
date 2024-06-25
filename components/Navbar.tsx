@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="px-5 py-5 md:pt-10">
       <div className="mx-auto flex w-full items-center justify-between">
         <Link
-          className="text-medium rounded-[5px] bg-slate-800 px-2 pt-1 text-center font-serif text-2xl font-bold text-white"
+          className="text-medium rounded-[5px] bg-slate-800 px-2 pt-1 text-center font-serif text-2xl font-bold text-white hover:bg-slate-900 hover:shadow-md"
           href="/"
         >
           A
