@@ -55,8 +55,8 @@ export default function About() {
           <div className="px-3 text-justify md:px-8">
             <p>
               Hello there! My name is{" "}
-              <span className="font-bold">Alvin Fadli Dwi Mulya</span>, Alvin
-              for short. Born and raised in{" "}
+              <span className="my-name font-bold">Alvin Fadli Dwi Mulya</span>,
+              Alvin for short. Born and raised in{" "}
               <span className="font-bold">Padang, Indonesia</span>.
             </p>
             <br />

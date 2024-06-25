@@ -1,11 +1,12 @@
 import ProjectCard from "@/components/ProjectCard";
 import { project } from "@/data/Data";
+import { Link } from "next-view-transitions";
 
 export default function Home() {
   return (
     <>
       <div className="flex flex-col py-10">
-        <h1 className="text-2xl font-bold">Alvin Fadli Dwi Mulya</h1>
+        <h1 className="my-name text-2xl font-bold">Alvin Fadli Dwi Mulya</h1>
         <p>Software Engineer</p>
       </div>
       <p className="flex items-stretch text-justify text-slate-800">
@@ -13,12 +14,12 @@ export default function Home() {
         Development. Interested in React, Svelte, and Go.
       </p>
       <div className="my-5">
-        <a
+        <Link
           href="/about"
           className="text-base text-slate-600 underline underline-offset-2"
         >
           Learn more
-        </a>
+        </Link>
       </div>
       <div className="flex flex-col py-10">
         <p className="mb-8 text-lg font-semibold underline underline-offset-4">

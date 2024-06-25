@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.my-name {
+  view-transition-name: demo-title;
+  width: fit-content;
+}
+
+@supports (view-transition-name: figure-caption) {
+  .support .yes {
+    display: inline;
+  }
+  .support .no {
+    display: none;
+  }
+}
