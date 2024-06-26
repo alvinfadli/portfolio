@@ -4,6 +4,7 @@ import { project } from "@/data/Data";
 import { Link } from "next-view-transitions";
 
 export default function Home() {
+  const previewProjects = project.slice(0, 2);
   return (
     <>
       <div className="flex flex-col py-10">
@@ -54,20 +55,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* <div className="my-5">
-        <Link
-          href="/about"
-          className="text-base text-slate-600 underline underline-offset-2"
-        >
-          Learn more
-        </Link>
-      </div> */}
-      <div className="flex flex-col py-10">
+
+      <div className="flex flex-col pt-10">
         <p className="mb-8 text-lg font-semibold underline underline-offset-4">
           Recent <span className="project">Projects</span>
         </p>
         <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
-          <ProjectCard projects={project} />
+          <ProjectCard projects={previewProjects} />
         </div>
         <Link
           href={"/project"}
