@@ -21,10 +21,10 @@ export default function RootLayout({
   return (
     <ViewTransitions>
       <html lang="en" className="" suppressHydrationWarning>
-        <body className={inter.className}>
-          <main className="relative mx-auto w-full md:w-10/12 lg:w-8/12 2xl:w-6/12">
+        <body className={`${inter.className} `}>
+          <main className="relative mx-auto min-h-screen w-full md:w-10/12 lg:w-8/12 2xl:w-6/12">
             <Navbar />
-            <div className="px-5">{children}</div>
+            <div className="px-5 pb-20">{children}</div>
             <Footer />
           </main>
           <Analytics />
